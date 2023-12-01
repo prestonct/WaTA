@@ -1,0 +1,486 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4592774255892971869
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1917201026207552342}
+  - component: {fileID: 3100254249810000196}
+  - component: {fileID: 4119501074269920054}
+  - component: {fileID: 1637271248618747841}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1917201026207552342
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4592774255892971869}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3100254249810000196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4592774255892971869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 670d8d4865bd4584bbbfdc3729accc92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioPlayerPrefab: {fileID: 51450839491560706, guid: 609d5551ed4167b4db3b612d37eed8d5, type: 3}
+  music: {fileID: 1637271248618747841}
+  WillowAttackSounds:
+  - Clip: {fileID: 8300000, guid: b80203a7cfde45645a414544f082aa81, type: 3}
+    Volume: 0.5
+    CooldownTime: 0.4
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: 7df52ec92a83f724bac3112ee89f4be4, type: 3}
+    Volume: 0.5
+    CooldownTime: 0.4
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: f4c60460df28c09498ddebc1b89ef798, type: 3}
+    Volume: 0.5
+    CooldownTime: 0.4
+    LastPlayTime: 0
+  WillowKillSounds:
+  - Clip: {fileID: 8300000, guid: 358d6db324a101845a12d83ad76fa771, type: 3}
+    Volume: 0.8
+    CooldownTime: 15
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: dba8e3b25fb623d4d827c01f2d1bb3a0, type: 3}
+    Volume: 0.8
+    CooldownTime: 15
+    LastPlayTime: 0
+  WillowStruckSounds:
+  - Clip: {fileID: 8300000, guid: 13f41f47e78f3764bbaaaa6b682cd68a, type: 3}
+    Volume: 0.3
+    CooldownTime: 5
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: 911dd18e5ebcd234c8cbc441301c9c70, type: 3}
+    Volume: 0.3
+    CooldownTime: 5
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: d977bf557660143428ac19aee7603411, type: 3}
+    Volume: 0.3
+    CooldownTime: 5
+    LastPlayTime: 0
+  WillowWalkSounds: {fileID: 4119501074269920054}
+  WillowSprintSounds:
+    Clip: {fileID: 0}
+    Volume: 0.5
+    CooldownTime: 0.5
+    LastPlayTime: 0
+  WillowJumpSounds:
+    Clip: {fileID: 8300000, guid: 573ced0151eeb4346b2be6895a803360, type: 3}
+    Volume: 0.5
+    CooldownTime: 0.2
+    LastPlayTime: 0
+  WillowGameStart:
+    Clip: {fileID: 8300000, guid: 091eabcfc0b16e14188b46ab4453f470, type: 3}
+    Volume: 1
+    CooldownTime: 5
+    LastPlayTime: 0
+  WillowMusings:
+    Clip: {fileID: 8300000, guid: 5cfec4059344f9d4cae7026e153345ff, type: 3}
+    Volume: 1
+    CooldownTime: 5
+    LastPlayTime: 0
+  WillowAttackQuips:
+  - Clip: {fileID: 8300000, guid: 573ced0151eeb4346b2be6895a803360, type: 3}
+    Volume: 0.6
+    CooldownTime: 10
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: 2fe49f322acecad419a8599650a23b5b, type: 3}
+    Volume: 0.6
+    CooldownTime: 10
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: 47a1b290f5a48144f9a5cb0fd50a2225, type: 3}
+    Volume: 0.6
+    CooldownTime: 10
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: 6c3c573605ce3ff48b8eb8df820dc89d, type: 3}
+    Volume: 0.6
+    CooldownTime: 10
+    LastPlayTime: 0
+  WillowStruckQuips:
+  - Clip: {fileID: 8300000, guid: 1fb4116abb06c2848b95624f3285c35b, type: 3}
+    Volume: 0.6
+    CooldownTime: 4
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: 7a5859d6ea5f23d4b9a6265d1fbdbf9d, type: 3}
+    Volume: 0.6
+    CooldownTime: 4
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: 9e69da5f3f7a20842b032d48fed6f028, type: 3}
+    Volume: 0.6
+    CooldownTime: 4
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: a3db165ed5de7154eb1d298747f273d9, type: 3}
+    Volume: 0.6
+    CooldownTime: 4
+    LastPlayTime: 0
+  BulletShootSounds:
+  - Clip: {fileID: 8300000, guid: 348a989ef695ada41a8875945d4d9e9c, type: 3}
+    Volume: 0.5
+    CooldownTime: 0.5
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: 924acc0b63415d940bcfefc54ea070b2, type: 3}
+    Volume: 0.5
+    CooldownTime: 0.5
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: f801a2316d66edf4cb60b30cc53908cb, type: 3}
+    Volume: 0.5
+    CooldownTime: 0.5
+    LastPlayTime: 0
+  LobShootSounds:
+  - Clip: {fileID: 8300000, guid: ce472c5f7b21d7c458e6e39869b4d930, type: 3}
+    Volume: 0.5
+    CooldownTime: 1
+    LastPlayTime: 0
+  ExplosionSounds:
+  - Clip: {fileID: 8300000, guid: 3e319c0e83c114143832912e68f773ef, type: 3}
+    Volume: 0.5
+    CooldownTime: 1
+    LastPlayTime: 0
+  StickShootSounds:
+  - Clip: {fileID: 8300000, guid: 024fdfe1c69f6a64aa6d65d6962cda4a, type: 3}
+    Volume: 0.2
+    CooldownTime: 1
+    LastPlayTime: 0
+  StickHitSounds: []
+  BotAttackSounds:
+  - Clip: {fileID: 8300000, guid: 09c2a2b2439b34e40aa80ea3d5c31e85, type: 3}
+    Volume: 0.5
+    CooldownTime: 5
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: 0f67d4e6cdc60fa4786b08e5656a4883, type: 3}
+    Volume: 0.5
+    CooldownTime: 5
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: 394d34217752afd4bb063e03b0b0d6bb, type: 3}
+    Volume: 0.5
+    CooldownTime: 5
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: cf9964cd0df6d2d45a8d2b23e929d5ec, type: 3}
+    Volume: 0.5
+    CooldownTime: 5
+    LastPlayTime: 0
+  BotStruckSounds:
+  - Clip: {fileID: 8300000, guid: 7fff56eb3a8e22a4bad9538c21ca2564, type: 3}
+    Volume: 0.5
+    CooldownTime: 1
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: 9029a311fc45d5d46b74fe8ddfc77b86, type: 3}
+    Volume: 0.5
+    CooldownTime: 1
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: b461326894cee4b4d96b981e4b36f284, type: 3}
+    Volume: 0.5
+    CooldownTime: 1
+    LastPlayTime: 0
+  BotStruckQuips:
+  - Clip: {fileID: 8300000, guid: 7a2ac3e8d7e00644dbb75e9abc8dbc43, type: 3}
+    Volume: 0.7
+    CooldownTime: 5
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: 19504b9c882a3be4ab9aa1b5f50ee5ef, type: 3}
+    Volume: 0.7
+    CooldownTime: 5
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: 8683272c66116674596bec6045743030, type: 3}
+    Volume: 0.7
+    CooldownTime: 5
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: 1a97ba7c365b2874c950d61f03fac54d, type: 3}
+    Volume: 0.7
+    CooldownTime: 5
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: 158e2061feb92534da663f7679fcc371, type: 3}
+    Volume: 0.7
+    CooldownTime: 5
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: 8a321c372decb0941a999ccac18694e2, type: 3}
+    Volume: 0.7
+    CooldownTime: 5
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: 725b0f8a5804fd040bb700d9c0994cc0, type: 3}
+    Volume: 0.7
+    CooldownTime: 5
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: de6da4d3c1da78c47af33b6eb605615a, type: 3}
+    Volume: 0.7
+    CooldownTime: 5
+    LastPlayTime: 0
+  BotIdleSounds:
+  - Clip: {fileID: 8300000, guid: 092a2fd489f533846b7e2e408eb68e97, type: 3}
+    Volume: 0.5
+    CooldownTime: 5
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: 0109fc2012024e844a8b3fbce68a4cd2, type: 3}
+    Volume: 0.5
+    CooldownTime: 5
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: 79b8768e568136444adffb6db48b6ceb, type: 3}
+    Volume: 0.5
+    CooldownTime: 5
+    LastPlayTime: 0
+  BotPatrollingSounds:
+  - Clip: {fileID: 8300000, guid: 30885a177c5086a4bad4bbf21251e14f, type: 3}
+    Volume: 0.5
+    CooldownTime: 5
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: caef230a768dda448b41c32a5c4e4612, type: 3}
+    Volume: 0.5
+    CooldownTime: 5
+    LastPlayTime: 0
+  BotLocatesTargetSounds:
+  - Clip: {fileID: 8300000, guid: 37d2e4e6e2bf40242a7c8343e00f500c, type: 3}
+    Volume: 0.5
+    CooldownTime: 5
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: 68c88653cf7cd0f428582775ffb3fb3d, type: 3}
+    Volume: 0.5
+    CooldownTime: 5
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: 184db539b8c2dfa45a29107c4b329dc8, type: 3}
+    Volume: 0.5
+    CooldownTime: 5
+    LastPlayTime: 0
+  BotLosesTargetSounds:
+  - Clip: {fileID: 8300000, guid: 7a2595002eaef8540bd6f0309a6ca3c8, type: 3}
+    Volume: 0.5
+    CooldownTime: 5
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: 6d9ac4d11dcaa714fb57f8c1fd00e5be, type: 3}
+    Volume: 0.5
+    CooldownTime: 5
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: 858857f9ae7fd6e4bbb9482769b9e8c4, type: 3}
+    Volume: 0.5
+    CooldownTime: 5
+    LastPlayTime: 0
+  - Clip: {fileID: 8300000, guid: 89f4a3244a212d64c84f1a401bf83062, type: 3}
+    Volume: 0.5
+    CooldownTime: 5
+    LastPlayTime: 0
+  GurtSounds:
+    Clip: {fileID: 8300000, guid: 3788306f6ae39e14e9bd7600e31a8bd4, type: 3}
+    Volume: 1
+    CooldownTime: 5
+    LastPlayTime: 0
+  GurtAussieSounds:
+    Clip: {fileID: 8300000, guid: e72c50ff4fba97e4a98cfb5555ddcba2, type: 3}
+    Volume: 1
+    CooldownTime: 5
+    LastPlayTime: 0
+--- !u!82 &4119501074269920054
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4592774255892971869}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a73b5d3975401b648b16819c481d9841, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.2
+  m_Pitch: 1
+  Loop: 1
+  Mute: 1
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 240
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 10
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &1637271248618747841
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4592774255892971869}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d976d587660844843a5c573233d86326, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.01
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 256
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
